@@ -1,0 +1,2917 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our 6th Monthsary Blossom Story 🌸</title>
+
+<!-- Romantic fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    color: #684452;
+    background: #fff2f6;
+    overflow-x: hidden;
+}
+
+
+/* =====================================================
+   COLORS
+===================================================== */
+
+:root {
+    --pink-light: #fff2f6;
+    --pink: #f5c3d2;
+    --pink-dark: #c87593;
+    --rose: #a95878;
+    --text: #684452;
+    --white: rgba(255,255,255,.75);
+}
+
+
+/* =====================================================
+   PAGE SYSTEM
+===================================================== */
+
+.page {
+    display: none;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.page.active {
+    display: flex;
+    animation: pageFade .9s ease;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =====================================================
+   GENERAL
+===================================================== */
+
+.container {
+    width: min(1050px, 90%);
+    margin: auto;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    color: #805064;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.script {
+    font-family: "Dancing Script", cursive;
+    color: var(--pink-dark);
+}
+
+.cursive {
+    font-family: "Great Vibes", cursive;
+}
+
+.serif {
+    font-family: "Cormorant Garamond", serif;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    cursor: pointer;
+}
+
+.main-btn {
+    border: none;
+    margin-top: 30px;
+    padding: 15px 32px;
+
+    color: white;
+    background: linear-gradient(
+        135deg,
+        #d98ca6,
+        #b96886
+    );
+
+    border-radius: 50px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    box-shadow:
+        0 10px 30px rgba(158,78,108,.25);
+
+    transition: .3s ease;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 15px 35px rgba(158,78,108,.35);
+}
+
+.main-btn:active {
+    transform: scale(.97);
+}
+
+
+/* =====================================================
+   FLOATING PETALS
+===================================================== */
+
+.petals-container {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 50;
+}
+
+.petal {
+    position: absolute;
+    top: -50px;
+
+    width: 15px;
+    height: 11px;
+
+    background: #f4aeca;
+
+    border-radius:
+        100% 0 100% 0;
+
+    opacity: .75;
+
+    animation:
+        falling linear infinite;
+}
+
+@keyframes falling {
+
+    0% {
+        transform:
+            translateY(-60px)
+            rotate(0deg);
+    }
+
+    50% {
+        transform:
+            translateY(55vh)
+            translateX(80px)
+            rotate(180deg);
+    }
+
+    100% {
+        transform:
+            translateY(110vh)
+            translateX(-80px)
+            rotate(360deg);
+    }
+}
+
+
+/* =====================================================
+   PAGE 1
+===================================================== */
+
+#page1 {
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at 15% 20%,
+            #ffe0ea,
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 80%,
+            #f7cfdd,
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #fbd9e4
+        );
+}
+
+.blossom-symbol {
+    font-size: 4.5rem;
+
+    animation:
+        floatBlossom 4s ease-in-out infinite;
+}
+
+@keyframes floatBlossom {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+.page1-small {
+    font-family: "Dancing Script", cursive;
+    font-size: 1.8rem;
+    color: #bd6e89;
+    margin-bottom: 10px;
+}
+
+.page1-title {
+    font-family: "Cinzel Decorative", serif;
+
+    font-size:
+        clamp(2.4rem, 7vw, 5.2rem);
+
+    color: #805064;
+
+    line-height: 1.15;
+}
+
+.page1-title span {
+    font-family: "Great Vibes", cursive;
+    color: #c87593;
+    font-size: 1.15em;
+}
+
+.page1-description {
+    max-width: 720px;
+    margin: 25px auto;
+
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 1.5rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PAGE 2
+===================================================== */
+
+#page2 {
+    align-items: center;
+    justify-content: center;
+
+    background: #fff3f7;
+}
+
+.center-blossom {
+    font-size: 6rem;
+
+    animation:
+        blossomPulse 3s ease-in-out infinite;
+}
+
+@keyframes blossomPulse {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+}
+
+.question-card {
+    width: min(650px, 100%);
+
+    margin: 25px auto 0;
+
+    padding: 45px 30px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    border:
+        1px solid rgba(220,150,175,.35);
+
+    border-radius: 35px;
+
+    box-shadow:
+        0 25px 70px rgba(140,70,95,.12);
+
+    backdrop-filter: blur(12px);
+}
+
+.question-card h2 {
+    font-family: "Cormorant Garamond", serif;
+
+    font-size: 2rem;
+
+    margin: 25px 0;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.choice {
+    border: none;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    background: #f8dbe5;
+
+    color: #704654;
+
+    transition: .3s;
+}
+
+.choice:hover {
+    background: #d88ca6;
+    color: white;
+
+    transform:
+        translateY(-3px);
+}
+
+.feedback {
+    min-height: 40px;
+
+    margin-top: 20px;
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 1.5rem;
+
+    color: #ae627f;
+}
+
+
+/* =====================================================
+   PAGE 3 — STORY
+===================================================== */
+
+#page3 {
+    display: none;
+
+    background:
+        linear-gradient(
+            #fff2f6,
+            #ffe2eb
+        );
+
+    padding:
+        80px 0;
+}
+
+#page3.active {
+    display: block;
+}
+
+.story-heading {
+    text-align: center;
+
+    margin-bottom: 60px;
+}
+
+.story-heading h1 {
+    font-size:
+        clamp(2.4rem, 6vw, 4rem);
+}
+
+.timeline {
+    width: min(900px, 90%);
+    margin: auto;
+
+    position: relative;
+}
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #dda0b5;
+
+    transform:
+        translateX(-50%);
+}
+
+.timeline-item {
+    width: 50%;
+
+    padding:
+        15px 40px;
+
+    position: relative;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-dot {
+    position: absolute;
+
+    top: 30px;
+
+    width: 18px;
+    height: 18px;
+
+    border-radius: 50%;
+
+    background: #ca7794;
+
+    border:
+        4px solid #fff2f6;
+
+    z-index: 2;
+}
+
+.timeline-item:nth-child(odd)
+.timeline-dot {
+    right: -9px;
+}
+
+.timeline-item:nth-child(even)
+.timeline-dot {
+    left: -9px;
+}
+
+.timeline-card {
+    padding: 22px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    border-radius: 25px;
+
+    box-shadow:
+        0 12px 35px rgba(140,70,95,.08);
+}
+
+.timeline-card h3 {
+    font-family:
+        "Playfair Display", serif;
+
+    color: #a85e79;
+
+    margin-bottom: 8px;
+}
+
+.timeline-card p {
+    font-family:
+        "Cormorant Garamond", serif;
+
+    font-size: 1.25rem;
+
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   PAGE 4 — LOVE METER
+===================================================== */
+
+#page4 {
+    align-items: center;
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle at center,
+            #ffe6ee,
+            #f9d3df
+        );
+}
+
+.big-heart {
+    font-size: 7rem;
+
+    animation:
+        heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.15);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    45% {
+        transform: scale(1.1);
+    }
+}
+
+.love-number {
+    font-family:
+        "Playfair Display", serif;
+
+    font-size: 4rem;
+
+    color: #ae627e;
+
+    margin: 20px;
+}
+
+#loveSlider {
+    appearance: none;
+
+    width: min(650px, 90%);
+
+    height: 9px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f0afc3,
+            #c87190
+        );
+
+    outline: none;
+}
+
+#loveSlider::-webkit-slider-thumb {
+    appearance: none;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #b96886;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 15px rgba(130,60,85,.25);
+}
+
+.love-meter-message {
+    min-height: 45px;
+
+    margin-top: 25px;
+
+    font-family:
+        "Dancing Script", cursive;
+
+    font-size: 1.7rem;
+
+    color: #a95d79;
+}
+
+
+/* =====================================================
+   PAGE 5 — QUIZ
+===================================================== */
+
+#page5 {
+    align-items: center;
+    justify-content: center;
+
+    background: #fff1f6;
+
+    padding: 60px 0;
+}
+
+.quiz-wrapper {
+    width: min(800px, 92%);
+
+    padding: 45px;
+
+    background:
+        rgba(255,255,255,.8);
+
+    border:
+        2px solid #efc0cf;
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 25px 70px rgba(130,65,90,.12);
+}
+
+.quiz-title {
+    font-size:
+        clamp(2.3rem, 6vw, 3.5rem);
+
+    margin-bottom: 40px;
+}
+
+.quiz-question {
+    text-align: left;
+
+    margin-bottom: 35px;
+}
+
+.quiz-question h2 {
+    font-family:
+        "Cormorant Garamond", serif;
+
+    font-size: 1.8rem;
+
+    margin-bottom: 15px;
+}
+
+.quiz-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.quiz-option {
+    border: none;
+
+    padding:
+        12px 20px;
+
+    border-radius: 25px;
+
+    background: #f9dce6;
+
+    color: #704654;
+
+    transition: .3s;
+}
+
+.quiz-option:hover {
+    background: #d585a0;
+    color: white;
+}
+
+.quiz-feedback {
+    min-height: 28px;
+
+    margin-top: 10px;
+
+    font-family:
+        "Dancing Script", cursive;
+
+    color: #ae627e;
+
+    font-size: 1.3rem;
+}
+
+
+/* =====================================================
+   PAGE 6 — HONEST ANSWERS
+===================================================== */
+
+#page6 {
+    display: none;
+
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        70px 0;
+
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            #ffe1ea,
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            #f6cddc,
+            transparent 35%
+        ),
+
+        #fff1f6;
+}
+
+#page6.active {
+    display: flex;
+}
+
+.honest-wrapper {
+    width: min(850px, 92%);
+
+    padding:
+        50px 45px;
+
+    background:
+        rgba(255,255,255,.72);
+
+    border:
+        2px solid rgba(219,145,169,.4);
+
+    border-radius: 40px;
+
+    box-shadow:
+        0 25px 80px rgba(130,65,90,.13);
+
+    backdrop-filter:
+        blur(12px);
+
+    position: relative;
+}
+
+/* Cherry blossom corner decorations */
+
+.honest-wrapper::before {
+    content: "🌸";
+
+    position: absolute;
+
+    top: -30px;
+    left: -20px;
+
+    font-size: 5rem;
+
+    transform:
+        rotate(-15deg);
+}
+
+.honest-wrapper::after {
+    content: "🌸";
+
+    position: absolute;
+
+    right: -20px;
+    bottom: -30px;
+
+    font-size: 5rem;
+
+    transform:
+        rotate(20deg);
+}
+
+.honest-intro {
+    max-width: 650px;
+
+    margin:
+        15px auto 40px;
+
+    font-family:
+        "Cormorant Garamond", serif;
+
+    font-size: 1.4rem;
+
+    line-height: 1.7;
+}
+
+.typed-question {
+    text-align: left;
+
+    margin-bottom: 28px;
+}
+
+.typed-question label {
+    display: block;
+
+    font-family:
+        "Cormorant Garamond", serif;
+
+    font-size: 1.5rem;
+
+    font-weight: 600;
+
+    margin-bottom: 10px;
+
+    color: #704554;
+}
+
+.answer-box {
+    width: 100%;
+
+    min-height: 90px;
+
+    resize: vertical;
+
+    border:
+        1px solid #e3b0c0;
+
+    border-radius: 18px;
+
+    padding:
+        15px 17px;
+
+    outline: none;
+
+    background:
+        rgba(255,255,255,.75);
+
+    color: #704554;
+
+    font-family:
+        "Dancing Script", cursive;
+
+    font-size: 1.25rem;
+
+    transition: .3s;
+}
+
+.answer-box:focus {
+    border-color: #c97894;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(201,120,148,.12);
+}
+
+.answer-box::placeholder {
+    color: #c48ca0;
+}
+
+.submit-answers {
+    margin-top: 10px;
+}
+
+.answers-message {
+    display: none;
+
+    margin-top: 30px;
+
+    font-family:
+        "Dancing Script", cursive;
+
+    font-size: 1.7rem;
+
+    line-height: 1.5;
+
+    color: #a85d78;
+}
+
+
+/* =====================================================
+   PAGE 7 — FINAL MESSAGE
+===================================================== */
+
+#page7 {
+    align-items: center;
+    justify-content: center;
+
+    padding:
+        70px 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            #f5b6c9 0%,
+            #f8c9ca 35%,
+            #f8d7bf 70%,
+            #ffe8cb 100%
+        );
+}
+
+.final-card {
+    width: min(900px, 92%);
+
+    padding:
+        55px;
+
+    background:
+        rgba(255,255,255,.45);
+
+    border-radius: 40px;
+
+    backdrop-filter:
+        blur(10px);
+
+    box-shadow:
+        0 25px 80px rgba(100,55,70,.15);
+}
+
+.final-card h1 {
+    font-size:
+        clamp(2.5rem, 6vw, 4.2rem);
+
+    margin-bottom: 25px;
+}
+
+.final-text {
+    text-align: left;
+
+    font-family:
+        "Cormorant Garamond", serif;
+
+    font-size: 1.4rem;
+
+    line-height: 1.85;
+
+    color: #654451;
+}
+
+.final-text p {
+    margin-bottom: 20px;
+}
+
+.final-message {
+    display: none;
+
+    margin-top: 35px;
+
+    font-family:
+        "Great Vibes", cursive;
+
+    font-size:
+        clamp(2.7rem, 7vw, 4.5rem);
+
+    color: #9e536f;
+
+    animation:
+        finalAppear 1.5s ease;
+}
+
+@keyframes finalAppear {
+
+    from {
+        opacity: 0;
+        transform:
+            scale(.6)
+            translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+
+/* =====================================================
+   KISS PETALS
+===================================================== */
+
+.kiss-petal {
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+
+    pointer-events: none;
+
+    z-index: 999;
+
+    font-size: 25px;
+
+    animation:
+        kissSwirl 2.8s
+        ease-out
+        forwards;
+}
+
+@keyframes kissSwirl {
+
+    0% {
+        transform:
+            translate(-50%,-50%)
+            scale(.2)
+            rotate(0);
+
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    100% {
+        transform:
+            translate(
+                calc(-50% + var(--x)),
+                calc(-50% + var(--y))
+            )
+            scale(1.2)
+            rotate(720deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =====================================================
+   MUSIC BUTTON
+===================================================== */
+
+.music-button {
+    position: fixed;
+
+    right: 20px;
+    bottom: 20px;
+
+    z-index: 200;
+
+    width: 48px;
+    height: 48px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background:
+        rgba(255,255,255,.75);
+
+    color: #a65b77;
+
+    font-size: 20px;
+
+    box-shadow:
+        0 8px 25px rgba(100,50,70,.15);
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media(max-width:700px) {
+
+    .page1-title {
+        font-size: 2.5rem;
+    }
+
+    .page1-description {
+        font-size: 1.25rem;
+    }
+
+    .question-card {
+        padding: 35px 20px;
+    }
+
+    .timeline::before {
+        left: 14px;
+    }
+
+    .timeline-item,
+    .timeline-item:nth-child(odd),
+    .timeline-item:nth-child(even) {
+        width: 100%;
+
+        left: 0;
+
+        text-align: left;
+
+        padding-left: 42px;
+        padding-right: 0;
+    }
+
+    .timeline-item:nth-child(odd)
+    .timeline-dot,
+
+    .timeline-item:nth-child(even)
+    .timeline-dot {
+        left: 5px;
+        right: auto;
+    }
+
+    .quiz-wrapper {
+        padding: 30px 20px;
+    }
+
+    .honest-wrapper {
+        padding: 40px 20px;
+    }
+
+    .final-card {
+        padding: 35px 20px;
+    }
+
+    .final-text {
+        font-size: 1.2rem;
+    }
+
+    .answer-box {
+        font-size: 1.15rem;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     FLOATING PETALS
+===================================================== -->
+
+<div class="petals-container" id="petalsContainer"></div>
+
+
+<!-- =====================================================
+     OPTIONAL MUSIC
+===================================================== -->
+
+<audio id="backgroundMusic" loop>
+    <!--
+        OPTIONAL:
+        Put your music file in the same folder and rename it
+        to "music.mp3", then remove the comment below.
+
+        <source src="music.mp3" type="audio/mpeg">
+    -->
+</audio>
+
+<button
+    class="music-button"
+    onclick="toggleMusic()"
+    id="musicButton"
+    title="Music">
+    ♫
+</button>
+
+
+<!-- =====================================================
+     PAGE 1
+===================================================== -->
+
+<section class="page active" id="page1">
+
+    <div class="container">
+
+        <div class="blossom-symbol">
+            🌸
+        </div>
+
+        <div class="page1-small">
+            pink kisses & little memories
+        </div>
+
+        <h1 class="page1-title">
+            Our 6th Monthsary
+            <br>
+
+            <span>
+                Blossom Story
+            </span>
+        </h1>
+
+        <p class="page1-description">
+
+            Happy 6th Monthsary, love.
+            This little website is my gift to you —
+            a garden of memories, made just for us.
+
+        </p>
+
+        <button
+            class="main-btn"
+            onclick="goToPage(2)">
+
+            Enter the Blossom Garden 🌸
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 2
+===================================================== -->
+
+<section class="page" id="page2">
+
+    <div class="container">
+
+        <div class="center-blossom">
+            🌸
+        </div>
+
+        <div class="script"
+             style="font-size:2rem;">
+
+            Before you enter...
+
+        </div>
+
+        <div class="question-card">
+
+            <h1 class="title"
+                style="font-size:3rem;">
+
+                A Little Question
+
+            </h1>
+
+            <h2>
+                “What’s my favorite color?”
+            </h2>
+
+            <div class="choices">
+
+                <button
+                    class="choice"
+                    onclick="favoriteColor('pink')">
+
+                    Pink 🌸
+
+                </button>
+
+                <button
+                    class="choice"
+                    onclick="favoriteColor('wrong')">
+
+                    Blue
+
+                </button>
+
+                <button
+                    class="choice"
+                    onclick="favoriteColor('wrong')">
+
+                    Black
+
+                </button>
+
+            </div>
+
+            <div
+                class="feedback"
+                id="favoriteFeedback">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 3
+===================================================== -->
+
+<section class="page" id="page3">
+
+    <div class="story-heading">
+
+        <div class="script"
+             style="font-size:2rem;">
+
+            every little moment became a petal
+
+        </div>
+
+        <h1 class="title">
+            Our Story in Petals
+        </h1>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>1st Year</h3>
+
+                <p>
+                    We became classmates in 1st year
+                    but barely talked.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>2nd Semester</h3>
+
+                <p>
+                    We started having small interactions
+                    because of groupings.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>The Last Name</h3>
+
+                <p>
+                    I only knew her by her last name.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>2nd Year</h3>
+
+                <p>
+                    We talked more,
+                    mostly about school stuff.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>The First Message</h3>
+
+                <p>
+                    She made the first move in chat.
+                    They were simple questions,
+                    but they made me notice her.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Cultural Show</h3>
+
+                <p>
+                    During cultural show practice,
+                    we got closer.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>The Jealous Ride</h3>
+
+                <p>
+                    After practice, we rode home as a group.
+                    She rode with the guy who liked her.
+                    I felt jealous and realized
+                    I had a crush on her.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Another Ride Home</h3>
+
+                <p>
+                    Another ride home,
+                    she rode with me.
+                    I felt so happy.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>My Friends Knew</h3>
+
+                <p>
+                    I kept mentioning her name
+                    until my friends noticed.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Our Little Circle</h3>
+
+                <p>
+                    We became a small circle —
+                    an unexpected friendship.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>The Confession</h3>
+
+                <p>
+                    I confessed.
+                    She rejected me kindly
+                    and said she was straight.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>I Became Shy</h3>
+
+                <p>
+                    I became shy,
+                    but she didn't avoid me.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>I Stayed</h3>
+
+                <p>
+                    She rejected me a few more times,
+                    but I stayed persistent.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>She Let Me In</h3>
+
+                <p>
+                    Slowly,
+                    she started letting me in.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Little Things</h3>
+
+                <p>
+                    I visited her house late at night
+                    with her favorite snacks,
+                    stayed until dawn,
+                    tried to be gentle and understanding,
+                    and gave her flowers.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Everything Came Naturally</h3>
+
+                <p>
+                    Caring for her never felt forced.
+                    Everything came naturally.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>She Let Me Court Her</h3>
+
+                <p>
+                    She finally allowed me
+                    to court her.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>She Said Yes</h3>
+
+                <p>
+                    After months,
+                    she said yes.
+                    She fell for my consistency.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Still Can't Believe It</h3>
+
+                <p>
+                    Even now, I still ask if we're really
+                    together because I can't believe
+                    you're mine.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>You Taught Me</h3>
+
+                <p>
+                    Loving you taught me
+                    how to love myself.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Still Learning</h3>
+
+                <p>
+                    We argue, we misunderstand,
+                    but we learn each other.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>Always Understanding</h3>
+
+                <p>
+                    I never get tired
+                    of understanding you.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="timeline-item">
+
+            <div class="timeline-dot"></div>
+
+            <div class="timeline-card">
+
+                <h3>My One Woman</h3>
+
+                <p>
+                    You're the only woman
+                    who ever made me feel this way.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div style="text-align:center;">
+
+        <button
+            class="main-btn"
+            onclick="goToPage(4)">
+
+            Continue Our Story 🌸
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 4
+===================================================== -->
+
+<section class="page" id="page4">
+
+    <div class="container">
+
+        <div class="big-heart">
+            💗
+        </div>
+
+        <div class="script"
+             style="font-size:2rem;">
+
+            Be honest, love...
+
+        </div>
+
+        <h1 class="title"
+            style="font-size:3rem;">
+
+            Rate How Much You Love Me
+
+        </h1>
+
+        <div
+            class="love-number"
+            id="loveNumber">
+
+            1%
+
+        </div>
+
+        <input
+            type="range"
+            min="1"
+            max="100"
+            value="1"
+            id="loveSlider">
+
+        <div
+            class="love-meter-message"
+            id="loveMeterMessage">
+        </div>
+
+        <button
+            class="main-btn"
+            onclick="goToPage(5)">
+
+            Next Petal 🌸
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 5
+===================================================== -->
+
+<section class="page" id="page5">
+
+    <div class="quiz-wrapper">
+
+        <div class="script"
+             style="font-size:1.9rem;">
+
+            just a few more questions...
+
+        </div>
+
+        <h1 class="title quiz-title">
+            Answer This, My Love
+        </h1>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="quiz-question">
+
+            <h2>
+                1. What makes our relationship special?
+            </h2>
+
+            <div class="quiz-options">
+
+                <button
+                    class="quiz-option"
+                    onclick="specialAnswer(this)">
+
+                    Your consistency
+
+                </button>
+
+                <button
+                    class="quiz-option"
+                    onclick="specialAnswer(this)">
+
+                    Your softness
+
+                </button>
+
+                <button
+                    class="quiz-option"
+                    onclick="specialAnswer(this)">
+
+                    Your love for me
+
+                </button>
+
+            </div>
+
+            <div
+                class="quiz-feedback"
+                id="specialFeedback">
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="quiz-question">
+
+            <h2>
+                2. Who confessed first?
+            </h2>
+
+            <div class="quiz-options">
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q3', true)">
+
+                    You
+
+                </button>
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q3', false)">
+
+                    Me
+
+                </button>
+
+            </div>
+
+            <div
+                class="quiz-feedback"
+                id="q3">
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="quiz-question">
+
+            <h2>
+                3. Who became clingy first?
+            </h2>
+
+            <div class="quiz-options">
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q4', false)">
+
+                    You
+
+                </button>
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q4', true)">
+
+                    Me
+
+                </button>
+
+            </div>
+
+            <div
+                class="quiz-feedback"
+                id="q4">
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="quiz-question">
+
+            <h2>
+                4. Who fell in love first?
+            </h2>
+
+            <div class="quiz-options">
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q5', true)">
+
+                    You
+
+                </button>
+
+                <button
+                    class="quiz-option"
+                    onclick="quizAnswer('q5', false)">
+
+                    Me
+
+                </button>
+
+            </div>
+
+            <div
+                class="quiz-feedback"
+                id="q5">
+            </div>
+
+        </div>
+
+
+        <button
+            class="main-btn"
+            onclick="goToPage(6)">
+
+            Continue 🌸
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 6 — HER OWN ANSWERS
+===================================================== -->
+
+<section class="page" id="page6">
+
+    <div class="honest-wrapper">
+
+        <div class="script"
+             style="font-size:2rem;text-align:center;">
+
+            now I want to hear your heart...
+
+        </div>
+
+        <h1
+            class="title"
+            style="
+                text-align:center;
+                font-size:3rem;
+            ">
+
+            Your Honest Answers,
+            <br>
+            My Love
+
+        </h1>
+
+
+        <p
+            class="honest-intro"
+            style="text-align:center;">
+
+            Before you reach the final page,
+            I want to ask you a few questions
+            only your heart can answer.
+            There are no wrong answers here.
+            Just be honest with me, love. 🌸
+
+        </p>
+
+
+        <!-- ANSWER 1 -->
+
+        <div class="typed-question">
+
+            <label>
+                1. What does it feel to be loved
+                by someone like me?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer1"
+                placeholder="Type your answer here, love..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 2 -->
+
+        <div class="typed-question">
+
+            <label>
+                2. Are you willing to stay despite
+                the challenges we have?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer2"
+                placeholder="Be honest with me..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 3 -->
+
+        <div class="typed-question">
+
+            <label>
+                3. When did you realize you were
+                starting to fall for me?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer3"
+                placeholder="Tell me your moment..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 4 -->
+
+        <div class="typed-question">
+
+            <label>
+                4. What part of me made you stay?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer4"
+                placeholder="I want to know..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 5 -->
+
+        <div class="typed-question">
+
+            <label>
+                5. What do you want us to improve together?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer5"
+                placeholder="Your thoughts matter to me..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 6 -->
+
+        <div class="typed-question">
+
+            <label>
+                6. If one day things get hard,
+                what do you want me to remember?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer6"
+                placeholder="I'll hold your words close..."
+            ></textarea>
+
+        </div>
+
+
+        <!-- ANSWER 7 -->
+
+        <div class="typed-question">
+
+            <label>
+                7. What kind of future do you imagine
+                with me?
+            </label>
+
+            <textarea
+                class="answer-box"
+                id="answer7"
+                placeholder="Dream with me..."
+            ></textarea>
+
+        </div>
+
+
+        <div style="text-align:center;">
+
+            <button
+                class="main-btn submit-answers"
+                onclick="submitAnswers()">
+
+                🌸 Submit My Answers
+
+            </button>
+
+        </div>
+
+
+        <div
+            class="answers-message"
+            id="answersMessage">
+
+            Thank you for answering honestly, love.
+            <br>
+            Your words mean more to me than you know.
+            <br><br>
+
+            Let's continue to the final page. 💗
+
+            <br>
+
+            <button
+                class="main-btn"
+                onclick="goToPage(7)">
+
+                Continue to the Final Page 🌸
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PAGE 7 — FINAL MESSAGE
+===================================================== -->
+
+<section class="page" id="page7">
+
+    <div class="final-card">
+
+        <div
+            class="script"
+            style="
+                text-align:center;
+                font-size:2rem;
+            ">
+
+            for you, my love...
+
+        </div>
+
+        <h1
+            class="title"
+            style="text-align:center;">
+
+            My Message for You
+
+        </h1>
+
+
+        <div class="final-text">
+
+            <p>
+                My love, six months with you feels like a quiet night
+                that never left. I know our relationship isn't always easy,
+                and I know there will be moments when people — even your
+                family — might not understand us. But I want you to know this:
+                I'm not going anywhere. I will fight for you gently,
+                patiently, and consistently, the same way I've loved you
+                since the beginning.
+            </p>
+
+
+            <p>
+                Loving you never felt like a task. It came naturally,
+                like breathing. Being faithful to you isn't something I force —
+                it's something my heart chooses every day. You taught me
+                softness, you taught me patience, and you taught me how to
+                love myself just by loving you.
+            </p>
+
+
+            <p>
+                We're still learning each other, still growing,
+                still figuring things out. But I'm here, love.
+                Through misunderstandings, through quiet nights,
+                through every season we'll face. You're the only woman
+                who ever made me feel this way, and I'm grateful every day
+                that you let me in.
+            </p>
+
+
+            <p>
+                Thank you for choosing me.
+                Thank you for staying.
+                Thank you for loving me in your own gentle way.
+                I love you — today, tomorrow, and every day after.
+            </p>
+
+        </div>
+
+
+        <div style="text-align:center;">
+
+            <button
+                class="main-btn"
+                onclick="kissMe()">
+
+                💋 Kiss me with a click
+
+            </button>
+
+            <div
+                class="final-message"
+                id="finalMessage">
+
+                I love you, always. 🌸
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script>
+
+/* =====================================================
+   PAGE NAVIGATION
+===================================================== */
+
+function goToPage(number) {
+
+    document
+        .querySelectorAll(".page")
+        .forEach(page => {
+
+            page.classList.remove("active");
+
+        });
+
+
+    const target =
+        document.getElementById(
+            "page" + number
+        );
+
+
+    target.classList.add("active");
+
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+}
+
+
+/* =====================================================
+   CREATE FLOATING PETALS
+===================================================== */
+
+function createPetal() {
+
+    const petal =
+        document.createElement("span");
+
+    petal.className = "petal";
+
+    petal.style.left =
+        Math.random() * 100 + "%";
+
+    petal.style.animationDuration =
+        (7 + Math.random() * 8) + "s";
+
+    petal.style.animationDelay =
+        Math.random() * 2 + "s";
+
+    petal.style.transform =
+        `rotate(${Math.random() * 360}deg)`;
+
+    document
+        .getElementById("petalsContainer")
+        .appendChild(petal);
+
+
+    setTimeout(() => {
+
+        petal.remove();
+
+    }, 16000);
+
+}
+
+
+setInterval(createPetal, 900);
+
+
+/* Create initial petals */
+
+for(let i = 0; i < 20; i++) {
+
+    setTimeout(
+        createPetal,
+        i * 250
+    );
+
+}
+
+
+/* =====================================================
+   PAGE 2 QUESTION
+===================================================== */
+
+function favoriteColor(answer) {
+
+    const feedback =
+        document.getElementById(
+            "favoriteFeedback"
+        );
+
+
+    if(answer === "pink") {
+
+        feedback.innerHTML =
+            "Correct, love. You really know me. 🌸";
+
+
+        bloomEffect();
+
+
+        setTimeout(() => {
+
+            goToPage(3);
+
+        }, 1800);
+
+
+    } else {
+
+        feedback.innerHTML =
+            "Love, you know this… try again. 💗";
+
+    }
+
+}
+
+
+/* =====================================================
+   BLOOM EFFECT
+===================================================== */
+
+function bloomEffect() {
+
+    for(let i = 0; i < 40; i++) {
+
+        const flower =
+            document.createElement("div");
+
+        flower.innerHTML =
+            Math.random() > .2
+            ? "🌸"
+            : "💗";
+
+
+        flower.style.position =
+            "fixed";
+
+        flower.style.left =
+            "50%";
+
+        flower.style.top =
+            "50%";
+
+        flower.style.zIndex =
+            "999";
+
+        flower.style.pointerEvents =
+            "none";
+
+
+        const x =
+            (Math.random() - .5) * 1100;
+
+        const y =
+            (Math.random() - .5) * 850;
+
+
+        flower.animate(
+
+            [
+                {
+                    transform:
+                        "translate(-50%,-50%) scale(.1)",
+                    opacity: 0
+                },
+
+                {
+                    transform:
+                        `translate(
+                            calc(-50% + ${x}px),
+                            calc(-50% + ${y}px)
+                        )
+                        rotate(540deg)
+                        scale(1)`,
+
+                    opacity: 1
+                },
+
+                {
+                    opacity: 0
+                }
+            ],
+
+            {
+                duration: 1800,
+                easing: "ease-out"
+            }
+
+        );
+
+
+        document.body.appendChild(flower);
+
+
+        setTimeout(() => {
+
+            flower.remove();
+
+        }, 1900);
+
+    }
+
+}
+
+
+/* =====================================================
+   LOVE METER
+===================================================== */
+
+const slider =
+    document.getElementById(
+        "loveSlider"
+    );
+
+const loveNumber =
+    document.getElementById(
+        "loveNumber"
+    );
+
+const loveMeterMessage =
+    document.getElementById(
+        "loveMeterMessage"
+    );
+
+
+slider.addEventListener(
+    "input",
+    function() {
+
+        const value =
+            Number(this.value);
+
+
+        loveNumber.textContent =
+            value + "%";
+
+
+        if(value > 80) {
+
+            loveMeterMessage.textContent =
+                "Hehe, I knew it. You love me more than you admit. 💗";
+
+        }
+
+        else if(value > 50) {
+
+            loveMeterMessage.textContent =
+                "Hmm... I think that number can go a little higher. 🌸";
+
+        }
+
+        else {
+
+            loveMeterMessage.textContent =
+                "Excuse me?! That's too little. 😭💗";
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   PAGE 5 QUESTION 2
+===================================================== */
+
+function specialAnswer(button) {
+
+    const feedback =
+        document.getElementById(
+            "specialFeedback"
+        );
+
+
+    feedback.textContent =
+        "Whatever you choose, it's true. You make everything special. 💗";
+
+
+    button.style.background =
+        "#d78aa4";
+
+    button.style.color =
+        "white";
+
+}
+
+
+/* =====================================================
+   PAGE 5 QUESTIONS
+===================================================== */
+
+function quizAnswer(id, correct) {
+
+    const feedback =
+        document.getElementById(id);
+
+
+    if(correct) {
+
+        feedback.textContent =
+            "Correct! You know our story too well. 🌸";
+
+    } else {
+
+        feedback.textContent =
+            "Hehe, not quite, love. Try again. 💗";
+
+    }
+
+}
+
+
+/* =====================================================
+   PAGE 6 — CHECK ALL ANSWERS
+===================================================== */
+
+function submitAnswers() {
+
+    const answers = [];
+
+
+    for(let i = 1; i <= 7; i++) {
+
+        const answer =
+            document
+                .getElementById(
+                    "answer" + i
+                )
+                .value
+                .trim();
+
+
+        answers.push(answer);
+
+    }
+
+
+    const empty =
+        answers.some(
+            answer => answer.length === 0
+        );
+
+
+    if(empty) {
+
+        alert(
+            "Answer all the questions first, love. 🌸"
+        );
+
+        return;
+
+    }
+
+
+    /*
+        Save her answers locally in the browser.
+        This means they remain there even if
+        the page is refreshed.
+    */
+
+    localStorage.setItem(
+        "monthsaryAnswers",
+        JSON.stringify(answers)
+    );
+
+
+    bloomEffect();
+
+
+    setTimeout(() => {
+
+        document
+            .getElementById(
+                "answersMessage"
+            )
+            .style.display =
+                "block";
+
+
+        document
+            .getElementById(
+                "answersMessage"
+            )
+            .scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+
+    }, 1000);
+
+}
+
+
+/* =====================================================
+   LOAD SAVED ANSWERS
+===================================================== */
+
+window.addEventListener(
+    "load",
+    function() {
+
+        const saved =
+            localStorage.getItem(
+                "monthsaryAnswers"
+            );
+
+
+        if(!saved) return;
+
+
+        try {
+
+            const answers =
+                JSON.parse(saved);
+
+
+            answers.forEach(
+                (answer, index) => {
+
+                    const box =
+                        document.getElementById(
+                            "answer" + (index + 1)
+                        );
+
+
+                    if(box) {
+
+                        box.value =
+                            answer;
+
+                    }
+
+                }
+            );
+
+        }
+
+        catch(error) {
+
+            console.log(
+                "No saved answers."
+            );
+
+        }
+
+    }
+);
+
+
+/* =====================================================
+   KISS BUTTON
+===================================================== */
+
+function kissMe() {
+
+    const finalMessage =
+        document.getElementById(
+            "finalMessage"
+        );
+
+
+    /*
+        Create a giant swirl of petals
+        and hearts.
+    */
+
+    for(let i = 0; i < 100; i++) {
+
+        const petal =
+            document.createElement("div");
+
+
+        petal.className =
+            "kiss-petal";
+
+
+        petal.innerHTML =
+            Math.random() > .25
+            ? "🌸"
+            : "💗";
+
+
+        const x =
+            (Math.random() - .5) * 1100;
+
+        const y =
+            (Math.random() - .5) * 850;
+
+
+        petal.style.setProperty(
+            "--x",
+            x + "px"
+        );
+
+        petal.style.setProperty(
+            "--y",
+            y + "px"
+        );
+
+
+        petal.style.animationDelay =
+            Math.random() * .6 + "s";
+
+
+        document.body.appendChild(
+            petal
+        );
+
+
+        setTimeout(() => {
+
+            petal.remove();
+
+        }, 3500);
+
+    }
+
+
+    setTimeout(() => {
+
+        finalMessage.style.display =
+            "block";
+
+
+        finalMessage.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+
+    }, 1200);
+
+}
+
+
+/* =====================================================
+   OPTIONAL MUSIC
+===================================================== */
+
+const music =
+    document.getElementById(
+        "backgroundMusic"
+    );
+
+const musicButton =
+    document.getElementById(
+        "musicButton"
+    );
+
+let musicPlaying = false;
+
+
+function toggleMusic() {
+
+    /*
+        If you add music.mp3 above,
+        this button will control it.
+    */
+
+    if(!music.src) {
+
+        alert(
+            "Add your music file as 'music.mp3' in the same folder as this HTML file. 🎵"
+        );
+
+        return;
+
+    }
+
+
+    if(musicPlaying) {
+
+        music.pause();
+
+        musicButton.innerHTML =
+            "♫";
+
+        musicPlaying = false;
+
+    } else {
+
+        music.play();
+
+        musicButton.innerHTML =
+            "🔊";
+
+        musicPlaying = true;
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>
